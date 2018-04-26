@@ -1,0 +1,14 @@
+{
+  "title": "Logging",
+  "category": "Native Clients",
+  "description": "Does your application store logs in the client?",
+  "tags" : "Android, iOS, Electron, WindowsPhone",
+  "minimum_risk_required" : "Low Risk",
+  "questions": {
+    "General": [
+      "We are not logging sensitive data (e.g. user password, session token, etc)",
+      "We have removed debugging code",
+      "We are not logging verbose error or debugging messages"
+    ]
+  }
+}

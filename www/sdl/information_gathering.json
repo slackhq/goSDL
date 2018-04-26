@@ -1,0 +1,55 @@
+[
+  {
+    "text": "Your Slack Username",
+    "name": "user",
+    "type": "input",
+    "placeholder": "fyunaz",
+    "required" : true
+  }, 
+  {
+    "text": "Project Name",
+    "name": "project_name",
+    "type": "input",
+    "placeholder": "calls",
+    "required" : true 
+  }, 
+  {
+    "text": "JIRA EPIC id",
+    "name": "jiraepic",
+    "type": "input",
+    "placeholder": "PRODSEC-1234",
+    "required" : true
+  },
+  {
+    "text": "Link to Spec",
+    "name": "spec",
+    "type": "input",
+    "placeholder": "https://",
+    "required" : true 
+  },
+  {
+    "text": "Link to PR / code location",
+    "name": "code_location",
+    "type": "input",
+    "placeholder": "https:// (optional)",
+    "required" : false 
+  }, 
+  {
+    "text": "Trello Team",
+    "name": "trello_team",
+    "type": "select",
+    "options" : [
+      {
+        "text":"(none)",
+        "value":""
+      }
+    ]
+  }, 
+  {
+    "text": "Project Risk",
+    "name": "risk_rating",
+    "type": "input",
+    "placeholder": "to be determined",
+    "readonly": true
+  }
+]

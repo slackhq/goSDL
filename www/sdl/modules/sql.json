@@ -1,0 +1,13 @@
+{
+  "title": "SQL",
+  "description": "Our project utilizes a database via SQL",
+  "tags" : "WebApp, API, MessageServer",
+  "minimum_risk_required" : "Low Risk",
+  "questions": {
+    "General": [
+      "We are not writing SQL and are utilizing the already-existing database abstraction functions available in our development",
+      "We are utilizing bind variables for any SQL statements, utilizing safe db functions",
+      "We are not building SQL statements by using string concatenation"
+    ]
+  }
+}

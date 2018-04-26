@@ -1,0 +1,13 @@
+{
+  "title": "Electron",
+  "category": "Native Clients",
+  "description": "We are developing electron application",
+  "tags" : "Electron",
+  "minimum_risk_required" : "Medium Risk",
+  "questions": {
+    "General": [
+      "We are not using <iframe>",
+      "We are only displaying trusted content to `webview`"
+    ]
+  }
+}

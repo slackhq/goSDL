@@ -1,0 +1,24 @@
+{
+  "title": "Policy",
+  "category": "Legal & Policy",
+  "description": "Policy needs to make sure we can continue to make good with our customers and contracts. Please reach out to #policy if your team has any issues with the following ",
+  "tags" : "WebApp, API, MessageServer, iOS, Android, Electron, WindowsPhone",
+  "minimum_risk_required" : "Medium Risk",
+  "questions": {
+    "Privacy": [
+      "This feature does not change the visibility or audience of message content",
+      "This feature does not ask for new permissions on a device",
+      "This feature does not scan message content or analyze it",
+      "This feature does not collect location information",
+      "This feature does not import contact information",
+      "This feature does not track visitors to measure advertising"
+    ],
+    "Data Practices": [
+      "This feature reasonably uses / collects data in a way that is expected by our customers",
+      "This feature doesn't collect any personally-identifiable-information (phone number, name of a user, email address, message content, web browsing history, photos, apps downloaded, unique device identifier, etc...)"
+    ],
+    "Terms, Policies, Controls": [
+      "This feature won't require us to update our Terms of Service"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Information Leakage",
+  "description": "This project or feature involves operating or displaying user information",
+  "tags" : "WebApp, API, MessageServer, iOS, Android, Electron, WindowsPhone",
+  "minimum_risk_required" : "Low Risk", 
+  "questions": {
+    "General": [
+      "This feature does not introduce the ability for a non-user (who does not have explicit access) to enumerate or display the existence of other users or user information",
+      "There is no functionality in our feature that returns a raw database entry back to the user"
+    ]
+  }
+}

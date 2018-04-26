@@ -1,0 +1,14 @@
+{
+  "title": "Open Sourcing this Project",
+  "category": "Third-Party & External",
+  "description": "Are you planning on open-sourcing this library?",
+  "tags" : "WebApp, API, MessageServer, iOS, Android, Electron, WindowsPhone",
+  "minimum_risk_required" : "Medium Risk", 
+  "questions": {
+    "Source Code Repository Scrubbing": [
+      "We have scrubbed the source code repo for secrets?",
+      "We have scrubbed the source code repo for history?",
+      "We have talked with the Open-Source team to ensure this project is a good candidate for being made public"
+    ]
+  }
+}

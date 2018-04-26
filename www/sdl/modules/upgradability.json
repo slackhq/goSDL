@@ -1,0 +1,13 @@
+{
+  "title": "Upgradability",
+  "category": "Third-Party & External",
+  "description": "Does this functionality have any considerations when libraries and components around it are updated, e.g for security patches?",
+  "tags" : "WebApp, API, MessageServer, iOS, Android, Electron, WindowsPhone",
+  "minimum_risk_required" : "Low Risk", 
+  "questions": {
+    "General": [
+      "There is a security plan (documentation, automated testing, and steps for an emergency upgrade of a 3rd party library) and commitment for upgrading, patching, and ongoing maintenance for this project",
+      "We have the ability and support to upgrade this functionality and it's supporting libraries for security incidents on a timeline of 3 days maximum"
+    ]
+  }
+}

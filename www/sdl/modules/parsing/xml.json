@@ -1,0 +1,13 @@
+{
+  "title": "XML",
+  "category": "Parsing",
+  "description": "Does your code work with/write/read XML?",
+  "tags" : "WebApp, API, MessageServer, iOS, Android, Electron",
+  "minimum_risk_required" : "Low Risk",
+  "questions": {
+    "General": [
+      "We are validating user-supplied XML with a schema doc before working on it",
+      "We have disabled all routes to [XML External Entity processing](https://www.owasp.org/index.php/XML_External_Entity_%28XXE%29_Processing) at the parser level"
+    ]
+  }
+}

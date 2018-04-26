@@ -1,0 +1,12 @@
+{
+  "title": "Windows Phone",
+  "category": "Native Clients",
+  "description": "We are developing Window phone app",
+  "tags" : "WindowsPhone",
+  "minimum_risk_required" : "Medium Risk",
+  "questions": {
+    "General": [
+      "We are only displaying trusted content to `WebView`"
+    ]
+  }
+}

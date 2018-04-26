@@ -1,0 +1,13 @@
+{
+  "title": "Open-Redirection",
+  "category": "Web",
+  "description": "Do you send users to another url?",
+  "tags" : "WebApp, API",
+  "minimum_risk_required" : "Low Risk",
+  "questions": {
+    "General": [
+      "Since the redirection doesn't need to be arbitrary, and user-controlled, we are utilizing the redirect framework to facilitate the redirection",
+      "We have looked into ways to avoid directing users to arbitrary urls, especially those that are user-controlled, while still retaining our functionality"
+    ]
+  }
+}

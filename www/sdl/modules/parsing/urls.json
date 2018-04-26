@@ -1,0 +1,37 @@
+{
+  "title": "URL Parsing",
+  "category": "Parsing",
+  "description": "Does your component build/parse URLs, read/write URLs, or operate with/consume URLs?",
+  "tags" : "WebApp, API, MessageServer, iOS, Android, Electron",
+  "minimum_risk_required" : "Medium Risk",
+  "questions": {
+    "General": [
+      "We are using a url-parsing library to load every url and guaranteeing its validity before operating on it",
+      "We know what type of scheme (http/https/ftp) we are expecting, so we are guaranteeing that the scheme is being parsed, and validated correctly"  
+    ]
+  },
+  "submodules": [
+    {
+      "title": "PHP URL Parsing Guidance",
+      "description": "PHP-specific advice to parsing URLs",
+      "tags" : "WebApp, API",
+      "minimum_risk_required" : "Medium Risk",
+      "questions": {
+        "General": [
+          "We are using `parse_url()` to load all untrusted user-provided URLs before working with them"
+        ]
+      }
+    },
+    {
+      "title": "Javascript URL Parsing Guidance",
+      "description": "Javascript-specific advice to parsing URLs",
+      "tags" : "WebApp, API",
+      "minimum_risk_required" : "Medium Risk",
+      "questions": {
+        "General": [
+          "We’re using an existing lib for URL validation or we are creating an `<a>` object in the DOM temporarily with the `href` as the url to parse, and interrogating the user-input based on the output of that object (e.g. `newurlobj.scheme == 'https'`) to trust all user-provided URLs before working with them"
+        ]
+      }
+    }
+  ]
+}

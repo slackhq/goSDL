@@ -1,0 +1,13 @@
+{
+  "title": "Authentication",
+  "description": "Does your code authenticate or authorize users, tokens, sessions, or other?",
+  "tags" : "WebApp, API, MessageServer, iOS, Android, Electron, WindowsPhone",
+  "minimum_risk_required" : "Low Risk",
+  "questions": {
+    "General": [
+      "We are only using approved authentication providers, or we are working with the security team on new autentication methods.",
+      "We are storing authentication tokens for integrations correctly.",
+      "We are not echoing authentication tokens (ours or third parties) into logs."
+    ]
+  }
+}

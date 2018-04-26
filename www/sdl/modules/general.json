@@ -1,0 +1,22 @@
+{
+  "title": "General Guidance",
+  "description": "Applies to All Projects: Standard security guidance that all projects, regardless of features, need to follow.",
+  "tags" : "WebApp, API, MessageServer, iOS, Android, Electron, WindowsPhone",
+  "minimum_risk_required" : "Low Risk",
+  "questions": {
+    "General": [
+      "We have completed a high-level [STRIDE](https://msdn.microsoft.com/en-us/library/ee823878%28v=cs.20%29.aspx) threat model of your project or feature.  For any potential issues that arise from following this process, please comment and detail them on this jira card.",
+      "We have tagged any bugs filed as a result of items in these checklists with '`security`' label.",
+      "Our application is running on machines supported by Operations.",
+      "We have thought about the default settings of this feature to ensure they are as secure and de-permissioned as possible.",
+      "We have looked at past bug bounty issues (tagged with '`bugbounty`') specific to this feature, functionality, or other similar features and ensured we're not making similar mistakes.",
+      "We have checked for dead code, and deleted it. Less code = fewer bugs!",
+      "We have not implemented any user-impersonation functionality.  If we have, we have had an in-depth discussion with the product security team about it",
+      "When a user is disabled or deleted, our functionality is not affected at all and we have no additional tasks to perform.  (For instance, when a user is created, and if they interact with our component, we don't need to perform any cleanup on behalf of a user delete or disable)"
+      ],
+    "Privacy": [
+      "We only utilize third-party services supported by IT or Operations",
+      "We have ensured that error messages don't leak sensitive information (debug/callstack/full objects) to a user"
+      ]
+  }
+}

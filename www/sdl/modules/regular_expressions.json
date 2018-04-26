@@ -1,0 +1,27 @@
+{
+  "title": "Regular Expressions",
+  "description": "Are you utilizing Regex in your application?",
+  "tags" : "WebApp, API, MessageServer, iOS, Android, Electron, WindowsPhone",
+  "minimum_risk_required" : "Low Risk", 
+  "questions": {
+    "General": [
+      "We are utilizing a built-in library to do data validation, instead of regex (e.g. url parsing)",
+      "We have taken every step available to avoid utilizing user-provided regular expressions",
+      "We have taken steps to ensure that there are no [denial-of-service scenarios](https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS) since we are dealing with user-provided input for regular expressions (e.g. limiting the character set of allowed characters, length of pattern)"
+    ]
+  },
+  "submodules": [
+    {
+      "title": "PHP Regular Expression Guidance",
+      "description": "PHP-specific regular expression guidance",
+      "tags" : "WebApp, API",
+      "minimum_risk_required" : "Low Risk", 
+      "questions": {
+        "General": [
+          "We are under no circumstances utilizing PHP's `/e` regex modifier to execute code",
+          "We are not allowing any user input to the first parameter of preg_replace without ensuring that we completely control the modifier clause at the end of the regex"
+        ]
+      }
+    }
+  ]
+}

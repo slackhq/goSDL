@@ -1,0 +1,14 @@
+{
+  "title": "Alert and Warning Messages",
+  "description": "Users need to understand the security impact of alert and warning messages to make safe choices. This section contains guidance on how to make sure that those decisions are clear.",
+  "tags" : "WebApp, API, MessageServer, iOS, Android, Electron, WindowsPhone",
+  "minimum_risk_required" : "Low Risk",
+  "questions": {
+    "NEAT Guidance (adapted from Microsoft)": [
+      "Necessary: The user absolutely needs to be presented with a decision for alerts and warnings.",
+      "Explained: The user has all of the information to make an appropriate decision.",
+      "Actionable: The user has a list of steps to make a good decision in both benign and malicios scenarios.",
+      "Tested: This warning has been reviewed by multiple engineers to make sure users understand how to respond to it."
+    ]
+  }
+}

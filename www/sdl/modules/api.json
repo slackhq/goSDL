@@ -1,0 +1,13 @@
+{
+  "title": "APIs",
+  "description": "Are you implementing or modifying any APIs?",
+  "tags": "WebApp, API",
+  "minimum_risk_required" : "Low Risk",
+  "questions": {
+    "Access Control Verification": [
+      "We have ensured that a Guest user / Multi-Channel user / Normal user / Admin user can only use this API as intended",
+      "We have ensured that if our API is called by an unauthenticated user / non-permissioned user, that it behaves correctly and denies access appropriately",
+      "When our API needs to be restricted based on a team-scope, user type restriction, or other access control consideration, we check for those conditions before performing any actions. In an enterprise org, we check for these conditions on all teams"
+    ]
+  }
+}

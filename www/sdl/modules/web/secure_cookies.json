@@ -1,0 +1,16 @@
+{
+  "title": "Secure Cookies",
+  "category": "Web",
+  "description": "Do you set cookies in your component?",
+  "tags" : "WebApp, API",
+  "minimum_risk_required" : "Low Risk",
+  "questions": {
+    "General": [
+      "We have forced the use of the `secure` flag if possible",
+      "We have forced the use of the `HttpOnly` flag if possible",
+      "We have alerted the Policy team to the contents and purpose of this new cookie, and where it will be used",
+      "We have ensured that the `domain` being set on this cookie is tightly-scoped to our specific location of functionality",
+      "We are not using cookies to store directly-sensitive information (customer information, data)"
+    ]
+  }
+}

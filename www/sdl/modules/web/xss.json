@@ -1,0 +1,22 @@
+{
+  "title": "XSS",
+  "category": "Web",
+  "description": "We are rendering content dynamically via DOM or reflecting content with PHP/Smarty",
+  "tags" : "WebApp, API",
+  "minimum_risk_required" : "Low Risk",
+  "questions": {
+    "General": [
+      "We are using standardized formatting libraries for all output of user-provided data",
+      "We are using proper `Content-Type` headers when rendering content.  e.g. `JSON` should be served with Content-Type: application/json",
+      "We have ensured that user input is not echoed or output unencoded on the page",
+      "We have tested user input (things that can be provided by the user - team name, text, etc..) with the value <script>alert(1);</script> to ensure there is no XSS present"
+    ],
+    "Javascript": [
+      "We are using the javascript formatting library to properly encode all user-provided data",
+      "We are not using .innerHTML, jQuery’s $.html(), handlebars’ triple curly brace {{{, or other direct-DOM methods with unsanitized user-provided data"
+    ],
+    "Smarty": [
+      "We are using the escape filter on all variables being rendrerd for the correct context that the text is being rendered in (inside HTML vs inside Javascript)"
+    ]
+  }
+}

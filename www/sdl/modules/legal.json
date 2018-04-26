@@ -1,0 +1,14 @@
+{
+  "title": "Legal",
+  "category": "Legal & Policy",
+  "description": "Legal needs to make sure we can continue to make good with our customers and contracts. Please reach out to #help-legal if your team has any issues with the following ",
+  "tags" : "WebApp, API, MessageServer, iOS, Android, Electron, WindowsPhone",
+  "minimum_risk_required" : "Medium Risk", 
+  "questions": {
+    "Legal Team Questions": [
+      "We do not employ the use of any proprietary third party code",
+      "Our feature does not introduce any new open-source libraries (licensing)",
+      "This feature does not introduce any complications to our SLAs for performance (e.g. significant page load times)"
+    ]
+  }
+}

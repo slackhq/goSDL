@@ -1,0 +1,61 @@
+{
+  "title": "All-Language Questionnaire",
+  "category": "Language",
+  "description": "These are questions apply to any language, and should be included",
+  "tags" : "WebApp, API, MessageServer, iOS, Android, Electron, WindowsPhone",
+  "minimum_risk_required" : "Low Risk", 
+  "questions": {
+    "General": [
+      "We are using a company-standard language, or we have checked in with the security team about using another language. Current supported languages are PHP, JavaScript, Java, C/C++ and Go",
+      "We are using the best language for our project/functionality and it is considered supported and well-maintained"
+    ]
+  },
+  "submodules": [
+    {
+      "title": "PHP Language Guidance",
+      "description": "PHP can be difficult to get right.  Here are some trouble spots that can trip up some projects",
+      "tags" : "WebApp, API",
+      "minimum_risk_required" : "Medium Risk", 
+      "questions": {
+        "Shell Execution": [
+          "Our project doesn't use eval, system, passthru, shell_exec, or backticks"
+        ],
+        "XSS": [
+          "XSS - Our application does not echo, print, or var_dump raw html or user content to the page",
+          {
+            "text": "XSS - We do not render json without utilizing the `json_encode` function",
+            "explanation": "Instead of generating JSON via string concatenation, please utilize the native PHP functions to ensure everything is escaped correctly"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Python Language Guidance",
+      "description": "Python-specific guidance for common traps",
+      "minimum_risk_required" : "Medium Risk", 
+      "questions": {
+        "Shell Execution": [
+          "My project doesn't use subprocess, or os.system"
+        ],
+        "XSS": [
+          "XSS - My application does not `print`, or reflect raw html or user content to the page",
+          {
+            "text": "XSS - We do not render json without utilizing the `JSON` library's `json.dumps` function",
+            "explanation": "Instead of generating JSON via string concatenation, please utilize the native Python functions to ensure everything is escaped correctly"
+          }
+        ]
+      }
+    },
+    {
+      "title": "C/C++ Language Guidance",
+      "description": "C and C++ guidance for common traps",
+      "minimum_risk_required" : "Medium Risk", 
+      "questions": {
+        "General": [
+          "We confirm that we really, really need to use a non-memory-safe language.",
+          "We carefully check the read and write length inside the buffer's boundary and there's no reading or writing outside of the indented memory bounds to prevent buffer overflow."
+        ]
+      }
+    }
+  ]
+}

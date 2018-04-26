@@ -1,0 +1,7 @@
+{
+    "require": {
+        "stevenmaguire/trello-php": "^0.3.6",
+        "smarty/smarty": "~3.1",
+		"vlucas/phpdotenv": "^2.2"
+    }
+}

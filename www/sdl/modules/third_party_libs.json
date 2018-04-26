@@ -1,0 +1,14 @@
+{
+  "title": "Third-Party Libraries",
+  "category": "Third-Party & External",
+  "description": "Does your project introduce or utilize a third-party library?",
+  "tags" : "WebApp, API, MessageServer, iOS, Android, Electron, WindowsPhone",
+  "minimum_risk_required" : "Medium Risk", 
+  "questions": {
+    "General": [
+      "The maintainer of this 3rd-party library has a security policy",
+      "We are utilizing the latest available stable version of this library",
+      "We have notified the security team about the usage of this library"
+    ]
+  }
+}

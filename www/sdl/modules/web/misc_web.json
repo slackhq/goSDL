@@ -1,0 +1,18 @@
+{
+  "title": "Misc Web",
+  "category": "Web",
+  "description": "Miscellaneous web issues that should be relevant for any web project",
+  "tags" : "WebApp, API",
+  "minimum_risk_required" : "Low Risk",
+  "questions": {
+    "General": [
+      "We do not take user input from a `GET` parameter and display it in a context that may be confusing to a user, or could convince a user to perform a malicious action (Text Injection)",
+      "All content rendered or injected into the page uses SSL/TLS to avoid Mixed Content issues"
+    ],
+    "Javascript": [
+      "We have verified the origin when excepting `postMessage()` from other windows",
+      "We have verified the targetOrigin when using `postMessage(message, targetOrigin)`",
+      "We have verified the syntax of the received message to prevent XSS when excepting `postMessage()` from other windows"
+    ]
+  }
+}

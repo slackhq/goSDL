@@ -1,0 +1,21 @@
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.md$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "^composer\..*$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+php_flag display_startup_errors off
+php_flag display_errors off
+php_flag html_errors off
+php_flag ignore_repeated_errors off
+php_flag ignore_repeated_source off
+php_value error_reporting -1

@@ -1,0 +1,77 @@
+{
+  "text": "Do you want direct security involvement throughout the project?",
+  "description": "If you think the project is risky and want help from Security from the beginning: trust your gut. We'll be involved and help however we can.",
+  "options": [
+    {
+      "text": "Yes",
+      "risk": "High Risk"
+    },
+    {
+      "text": "No",
+      "question": {
+        "text": "Does this component make major changes or implement new authentication or security controls?",
+        "description": "Say \"yes\" if this component adds new ways for people to authenticate, adds to or changes existing security controls, or otherwise explicitly implements security/privacy features.",
+        "options": [
+          {
+            "text": "Yes",
+            "risk": "High Risk"
+          },
+          {
+            "text": "No",
+            "question": {
+              "text": "Is this project highly important strategically?",
+              "description": "Is this project one of our top priorities, one with major implications for our business, or otherwise highly strategic?",
+              "options": [
+                {
+                  "text": "Yes",
+                  "risk": "Medium Risk"
+                },
+                {
+                  "text": "No",
+                  "question": {
+                    "text": "Is the target for this project a prototype, internal-only, or a full, productionized, public launch?",
+                    "options": [
+                      {
+                        "text": "Prototype or internal-only",
+                        "risk": "Low Risk"
+                      },
+                      {
+                        "text": "Public launch",
+                        "question": {
+                          "text": "Will this component access or store sensitive customer data",
+                          "description": "Customer Data is the most sensitive type of data such as the contents of any messages, private chats, etc.",
+                          "options": [
+                            {
+                              "text": "Yes, this component will access sensitive customer data",
+                              "question": {
+                                "text": "Is this a change/update to an existing component, or a completely new project?",
+                                "options": [
+                                  {
+                                    "text": "New Component",
+                                    "risk": "High Risk"
+                                  },
+                                  {
+                                    "text": "A change to an existing component",
+                                    "risk": "Medium Risk"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "text": "No",
+                              "risk": "Low Risk"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "CSRF",
+  "category": "Web",
+  "description": "Implementing functionality that causes user actions to happen can sometimes be triggered remotely without the user being aware.  If your functionality is exposed directly on web, please make sure that you are protected against csrf attacks",
+  "tags" : "WebApp, API",
+  "minimum_risk_required" : "Low Risk",
+  "questions": {
+    "General": [
+      "We are using the built-in anti-CSRF framework for our form and action functionality",
+      "Every action in our functionality that can be unfortunate for a user to trigger (sending a message, deleting an account), is protected by an anti-CSRF token"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Android",
+  "category": "Native Clients",
+  "description": "We are developing android application",
+  "tags" : "Android",
+  "minimum_risk_required" : "Medium Risk",
+  "questions": {
+    "General": [
+      "We are not using MODE_WORLD_WRITEABLE or MODE_WORLD_READABLE",
+      "We are only requesting the minimum set of permissions necessary in `AndroidManifest.xml`",
+      "We are limiting our exported `activity` / `receiver` / `services`",
+      "We are only displaying trusted content to `webview`"
+    ]
+  }
+}

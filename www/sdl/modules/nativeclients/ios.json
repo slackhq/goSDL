@@ -1,0 +1,13 @@
+{
+  "title": "iOS",
+  "category": "Native Clients",
+  "description": "We are developing iOS application",
+  "tags" : "iOS",
+  "minimum_risk_required" : "Medium Risk",
+  "questions": {
+    "General": [
+      "We are not using NSUserDefaults or plist to store sensitive data",
+      "We are only displaying trusted content to `UIWebviews`"
+    ]
+  }
+}
