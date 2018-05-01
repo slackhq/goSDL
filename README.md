@@ -36,7 +36,7 @@ When the web page loads. It will require the user to get authorize the app to ge
 
 ### Using JIRA Enterprise
 
-Currently, this tool only supports JIRA Enterprise (on Premise) and doesn't support JIRA Cloud. This is because we need the support from scriprunner to create the additional REST API endpoint used to populate the checklist plugin. There are some Add-on dependencies required in your JIRA before using this tool:
+Currently, this tool only supports JIRA Enterprise (on Premise) and doesn't support JIRA Cloud. This is because we need the support from scriptrunner to create the additional REST API endpoint used to populate the checklist plugin. There are some Add-on dependencies required in your JIRA before using this tool:
 
 1. [ScriptRunner for Jira](https://marketplace.atlassian.com/plugins/com.onresolve.jira.groovy.groovyrunner/server/overview)
 	Required to create an additional JIRA API to update custom checklist in a ticket.
