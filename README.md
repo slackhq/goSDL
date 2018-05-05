@@ -122,6 +122,12 @@ Settings:
 
 6. Visit http://localhost:8000/sdl.php
 
+### Usage with docker
+1. Build locally: `docker build -t gosdl .`
+
+2. Run it: `docker run -ti --rm --env-file <your dotenv> -p 8080:8080 gosdl`
+
+3. Visit http://localhost:8000/sdl.php
 
 ### Customize the checklist contents
 Follow this [guide](https://github.com/slackhq/goSDL/tree/master/www/sdl) to understand the structures of the SDL content 
