@@ -6,10 +6,10 @@ goSDL is a web application tool that serves as a self-service entry point for fo
 
 
 Goals:
-- Self service : Provide self service tool for Project Lead or Developer to get a Security checklists related to their project. 
-- Specific : Project Lead or Developer can pick and choose specific components related to their projects. The tool will tailor the checklist to thier specific needs without providing unecessary non related checklist item.
-- Standardize : Security team can create a standardize risk assessment and checklist related items throughout the organization. 
-- Plugable and customized component : JSON base components that are easy to modify and update.
+- Self service : Provide self service tool for Project Lead or Developer to get a Security checklist related to their project. 
+- Specific : Project Lead or Developer can pick and choose specific components related to their projects. The tool will tailor the checklist to their specific needs without providing unnecessary unrelated checklist items.
+- Standardize : Security team can create a standardized risk assessment and checklist related items throughout the organization. 
+- Pluggable and customized components : JSON base components that are easy to modify and update.
 
 
 ### General Usage
@@ -25,14 +25,14 @@ Goals:
 
 ### Using Trello
 
-Trello is a web-based project management application that has a powerfull checklists support to enable you to organize your projects. 
+Trello is a web-based project management application that has powerful checklist support to enable you to organize your projects. 
 
-To use Trello as part of this tool, enable the Trello setting in the `include/.env`. You also need to generate your Trello aplication key from https://trello.com/app-key. When using Trello, you don't need to specify any other setting on this file.
+To use Trello as part of this tool, enable the Trello setting in the `include/.env`. You also need to generate your Trello application key from https://trello.com/app-key. When using Trello, you don't need to specify any other setting in this file.
 	
 	TRELLO=true
 	TRELLO_API_KEY=xxxxxxxxxxxxxx
 	
-When the web page loads. It will require the user to get authorize the app to get their access token to trello. The output of this tool will create a link to a Trello board that contains security checklist items that used by the development team to follow the security guideline.
+When the web page loads, it will require the user to authorize the app to get their access token to Trello. The output of this tool will create a link to a Trello board that contains security checklist items that can be used by the development team to follow the security guidelines.
 
 ### Using JIRA Enterprise
 
@@ -41,7 +41,7 @@ Currently, this tool only supports JIRA Enterprise (on Premise) and doesn't supp
 1. [ScriptRunner for Jira](https://marketplace.atlassian.com/plugins/com.onresolve.jira.groovy.groovyrunner/server/overview)
 	Required to create an additional JIRA API to update custom checklist in a ticket.
 2. [Checklist for Jira](https://marketplace.atlassian.com/plugins/com.okapya.jira.checklist/server/overview)
-	Enables checklist custom field in the JIRA ticket.
+	Enables the checklist custom field in JIRA tickets.
 
 Settings:
 1. Add a custom REST API in scriptrunner.
@@ -124,4 +124,4 @@ Settings:
 
 
 ### Customize the checklist contents
-Follow this [guide](https://github.com/slackhq/goSDL/tree/master/www/sdl) to understand the structures of the SDL content 
+Follow this [guide](https://github.com/slackhq/goSDL/tree/master/www/sdl) to understand the structures of the SDL contents. 
