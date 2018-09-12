@@ -40,8 +40,10 @@
 
 		$response = curl_exec($ch);
 		$ch_error = curl_error($ch);
+		$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+		
 		curl_close($ch);
-		if ($ch_error){
+		if ($ch_error || $httpcode >= 400){
 		//      echo "cURL Error: $ch_error";
 			return array(
 				"ok" => false,
@@ -81,7 +83,9 @@
 
 		$response = curl_exec($ch);
 		$ch_error = curl_error($ch);
-		if ($ch_error){
+		$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+		if ($ch_error || $httpcode >= 400){
 		//      echo "cURL Error: $ch_error";
 			curl_close($ch);
 			return array(
@@ -134,8 +138,9 @@
 
 		$response = curl_exec($ch);
 		$ch_error = curl_error($ch);
+		$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 		
-		if ($ch_error){
+		if ($ch_error || $httpcode >= 400){
 			// echo "cURL Error: $ch_error";
 			curl_close($ch);
 			return array(
