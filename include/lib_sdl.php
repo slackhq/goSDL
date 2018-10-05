@@ -468,18 +468,18 @@
 		$data = array(
 			'fields' => array(
 				'project' => array(
-					'key' => 'PRODSEC',
+					'key' => getenv('JIRA_URL') ?: 'PRODSEC',
 				),
 				'labels' => array('sdl'),
 				'components' => array(
 					array(
-						'name' => 'Identification',
+						'name' => getenv('JIRA_COMPONENT') ?: 'Identification',
 					),
 				),
 				'summary' => $risk_rating. ': Review: ' . $project_name,
 				'description' => "Review for {$project_name}\nJIRA SDL Checklist at : {$jiraChecklistId}\n\n{$info_blob}",
 				"issuetype" => array(
-					"name" => 'Task',
+					"name" => getenv('JIRA_REVIEW_ISSUE_TYPE') ?: 'Task',
 				),
 			),
 		);
