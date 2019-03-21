@@ -5,7 +5,7 @@
   "minimum_risk_required" : "Low Risk",
   "questions": {
     "General": [
-      "We have completed a high-level [STRIDE](https://msdn.microsoft.com/en-us/library/ee823878%28v=cs.20%29.aspx) threat model of your project or feature.  For any potential issues that arise from following this process, please comment and detail them on this jira card.",
+      "We have completed a high-level [STRIDE](https://msdn.microsoft.com/en-us/library/ee823878%28v=cs.20%29.aspx) threat model of our project or feature.  For any potential issues that arise from following this process, please comment and detail them on this jira card.",
       "We have tagged any bugs filed as a result of items in these checklists with '`security`' label.",
       "Our application is running on machines supported by Operations.",
       "We have thought about the default settings of this feature to ensure they are as secure and de-permissioned as possible.",
