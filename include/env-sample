@@ -7,6 +7,8 @@ JIRA_TOKEN=
 
 JIRA_PROJECT=PRODSEC
 JIRA_URL="https://your_domain.com"
+JIRA_COMPONENT=Identification
+JIRA_REVIEW_ISSUE_TYPE=Task
 
 JIRA_GENERAL_FIELD=customfield_111
 JIRA_LANGUAGE_FIELD=customfield_112
