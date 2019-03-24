@@ -47,14 +47,21 @@ Settings:
 1. Add a custom REST API in scriptrunner.
 	- Go to "Administration" -> "Script Runner" -> "Custom Endpoint"
 	- Fill out the `inline script` with the script in `scriptrunner/Scriptrunner_REST_API.groovy`
-2. Create the checklist custom field for each individual SDL component. These custom fields will be used as a placeholder template for the security checklist item.
+
+2. Create custom issue type
+	- Go to "Administration" -> "Issues" -> "Add Issue Type"
+	- Enter "SDL Checklist" as the name
+	- Use "Standard Issue Type"
+	- Update Issue Type Scheme with the custom issue type
+
+3. Create the checklist custom field for each individual SDL component. These custom fields will be used as a placeholder template for the security checklist item.
 	- Go to "Administration" -> "Issue" -> "Custom Fields" -> "add custom field"
 	- Enter "SDL General" as the name. Configure the checklist custom field to not have a default option. You can also associate the new checklist custom field with a specific issue type.
 	- Also note your custom field id when configuring the new custom field. You can get the id # from the URL (e.g https://your_domain.com/secure/admin/ConfigureCustomField!default.jspa?customFieldId=11909). The custom field id on this sample is "customfield_11909". This value is required when setting the `.env`.
 	- Later you need to update your JIRA screen to include this new checklist custom field.
 	Please reach out to your JIRA adminstrator to get more information on how to setup your project with custom checklist.
 
-3. After setting your project, you need to set the `.env` file.
+4. After setting your project, you need to set the `.env` file.
 	Sample file:
 	```
 	JIRA_USERNAME=username
