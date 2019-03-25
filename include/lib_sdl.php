@@ -27,7 +27,7 @@
 				$infoobj['submodules'] = array();
 				foreach ($parsed['submodules'] as $submod){
 					$infoobj2 = array(
-						"filename" => $filename,
+						"filename" => $filename.md5($filename.$submod['title']),
 						"title" => $submod['title'],
 						"description" => $submod['description'],
 					);
