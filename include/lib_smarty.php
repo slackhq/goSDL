@@ -14,8 +14,6 @@
 	$GLOBALS['cfg']['smarty_compile']	= true;
 	$GLOBALS['cfg']['smarty_force_compile']	= true;
 
-	require '../vendor/smarty/smarty/libs/Smarty.class.php';
-
 	$GLOBALS['smarty'] = new Smarty();
 	$GLOBALS['smarty']->template_dir = $GLOBALS['cfg']['smarty_template_dir'];
 	$GLOBALS['smarty']->compile_dir  = $GLOBALS['cfg']['smarty_compile_dir'];
