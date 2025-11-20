@@ -125,7 +125,7 @@ Settings:
 ### Usage with docker
 1. Build locally: `docker build -t gosdl .`
 
-2. Run it: `docker run -ti --rm --env-file <your dotenv> -p 8080:8080 gosdl`
+2. Run it: `docker run -ti --rm --env-file <your dotenv> -p 8000:8080 gosdl`
 
 3. Visit http://localhost:8000/sdl.php
 
